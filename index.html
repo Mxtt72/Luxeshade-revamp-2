@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>ShadeScout</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+
+      <h1>ShadeScout</h1>
+
+      <div class="toggle-container">
+
+        <label>
+
+          <input type="checkbox" id="darkModeToggle" />
+
+          <span class="slider"></span>
+
+        </label>
+
+        <span class="mode-label">Dark Mode</span>
+
+      </div>
+
+    </header>
+
+
+
+    <main>
+
+      <div class="upload-section">
+
+        <label for="imageUpload" class="custom-file-upload">Upload Image</label>
+
+        <input type="file" id="imageUpload" accept="image/*"/>
+
+      </div>
+
+
+
+      <canvas id="imageCanvas"></canvas>
+
+      <div id="colorDisplay"></div>
+
+
+
+      <div class="filters">
+
+        <label><input type="checkbox" id="veganFilter"/> Vegan Only</label>
+
+        <label><input type="checkbox" id="crueltyFreeFilter"/> Cruelty-Free Only</label>
+
+        <select id="productType">
+
+          <option value="lipstick">Lipstick</option>
+
+          <option value="lip_liner">Lip Liner</option>
+
+          <option value="foundation">Foundation</option>
+
+          <option value="eyeshadow">Eyeshadow</option>
+
+          <option value="blush">Blush</option>
+
+        </select>
+
+      </div>
+
+
+
+      <button id="scanBtn">Find Match</button>
+
+      <div class="loader" id="loader"></div>
+
+      <div id="results"></div>
+
+    </main>
+
+
+
+    <footer>
+
+      <p>Made with 💄 by ShadeScout</p>
+
+    </footer>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>
